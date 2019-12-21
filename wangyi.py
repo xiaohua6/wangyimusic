@@ -1,5 +1,5 @@
 #
-# http://music.163.com/song/media/outer/url?id=436514312.mp3，也可以直接
+# http://music.163.com/song/media/outer/url?id=436514312.mp3，也可以直接通过这个连接直接获取mp3文件
 import os
 import re
 import requests
@@ -118,7 +118,7 @@ class wangyi(object):
 
 if __name__ == '__main__':
     while True:
-        playlist = input('请输入您要下载的网易云音乐id,退出请输入no:')
+        playlist = input('请输入您要下载的网易云音乐歌单id,退出请输入no:')
 
         if playlist == "no" and not playlist.isdigit():
             playlist = "2916766519"
