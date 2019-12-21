@@ -23,8 +23,6 @@ class wangyi(object):
     # 获取歌单的url
         url='https://music.163.com/playlist?id=%s'%self.playlist
 
-        # 启用session保持长连接
-
         result=requests.get(url,headers=self.headers)
         # 获取页面文本
         result=result.text
