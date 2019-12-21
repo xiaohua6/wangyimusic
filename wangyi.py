@@ -84,7 +84,7 @@ class wangyi(object):
 
 
         try:
-        # print(url)
+        # 因为有的歌曲已经下架所以要捕获异常
             data=requests.get(url)
 
             # print(url)
